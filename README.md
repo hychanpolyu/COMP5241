@@ -94,63 +94,38 @@ The rapid evolution of Generative AI has fundamentally reshaped software develop
 - **Primary Persona A (Non-CS Aspiring PM/Founder):** Learns how agile sprints work, how to manage sprint backlogs, and how technical debt impacts product timelines.
 - **Primary Persona B (CS Graduate / Software Engineer):** Learns system design trade-offs, CI/CD pipeline diagnosis, merge conflict resolution, and architectural stress-testing.
 
-### 3.2 Prototypes for Project 2
+### 3.2 Prototypes for Project 2: Role-Playing Software Engineering Lab
 
-#### Prototype 1: "Simulated Agile Sprint & Multi-Agent PR Review" (Interactive Simulation & Role-Play)
-- **Format:** Interactive Kanban & Pull Request Simulation.
-- **Core Focus:** *Team Collaboration*, *AI Agent Orchestration*, and *Delegation*.
-- **User Experience:**
-  - The learner picks up a ticket from a simulated Jira/Linear-style board.
-  - They use an integrated AI co-pilot to implement the feature or fix the bug.
-  - When submitting a simulated GitHub Pull Request, three distinct AI bot reviewers inspect the code:
-    - **Security Sentinel:** Scans for token leaks, SQL injection, and insecure dependencies.
-    - **Performance Guru:** Flags O(N^2) algorithms and memory leaks.
-    - **Clean Code & Architecture Lead:** Enforces modularity, naming, and SOLID principles.
-  - The learner must defend their design decisions in the PR comment thread, request targeted AI revisions, or fix the code until CI checks turn green.
+SimuDev Studio immerses students in three pivotal software engineering roles, simulating the full development lifecycle from business requirement analysis to developer version control and tech lead code review:
 
-#### Prototype 2: "Interactive System Architecture & Incident War Room" (Interactive Simulation & Visual Canvas)
-- **Format:** Drag-and-Drop Diagramming & Live Incident Response Game.
-- **Core Focus:** *Software Architecture Fundamentals* and *System Resilience*.
+#### Prototype 1: "Functional Design & Requirement Scope Filter" (Role: Business Analyst / System Analyst)
+- **Format:** Interactive Requirement Card Sorting & Drag-and-Drop Filter.
+- **Core Focus:** *Problem Framing* and *Description* in the 4D Fluency framework.
 - **User Experience:**
-  - The learner designs a system topology on an interactive canvas (connecting clients, API gateways, load balancers, relational databases, cache nodes, and message queues).
-  - Once deployed in the simulator, the AI engine injects traffic spikes or chaos events (e.g., "Black Friday Traffic Surge", "Database Primary Node Crash").
-  - The learner monitors simulated latency, error rates, and CPU load.
-  - An AI Incident Commander conducts an interactive voice/text triage with the learner to diagnose the bottleneck and redesign the topology with caching/sharding strategies to restore availability.
+  - **Meeting Conclusion Brief:** Learners review stakeholder meeting minutes containing client feature requests alongside Business Analyst (BA) and System Analyst (SA) directives (approved vs. banned items).
+  - **Interactive 2-Box Organizer:** Left box displays 10 candidate action cards. The learner drags/selects valid cards into the right box (Sprint Scope).
+  - **Evaluation & Rationale:** 5 cards are valid architectural features (SSO auth, roster CSV import, analytics, deadline alerts, interactive sandbox), while 5 are dangerous anti-patterns or scope creep (plaintext passwords, raw client SQL execution, crypto payment gateways, rate-limit bypassing, unauthorized scraping).
+  - Submitting gives an immediate score and exhaustive explanations for why each card was included or banned.
 
-#### Prototype 3: "CodeVenture: Universal Gamified Micro-Quest Generator" (Gamification & Domain Course Generator)
-- **Format:** RPG-Style Skill Tree with AI-Generated Coding Quests.
-- **Core Focus:** *Fun/Engagement* and *Universal Self-Learning in Any Domain*.
+#### Prototype 2: "Git Mastery & Workflow Competency Simulator" (Role: Software Developer)
+- **Format:** Randomized Technical Assessment with Interactive Explanations.
+- **Core Focus:** *Diligence* and *Developer Version Control Invariants*.
 - **User Experience:**
-  - Learners navigate a visual skill tree ("Dungeon of Data Structures", "Labyrinth of LLM Agents", "Tower of Testing").
-  - Each node is an interactive micro-quest (e.g., a 5-minute interactive puzzle where players repair a broken API route or configure an agent prompt pipeline).
-  - **Universal Domain Generator:** Any user can input an arbitrary subject (e.g., "Web3 Smart Contracts", "Bioinformatics Pipeline", or "Game Physics"). The AI autonomously builds a 5-node progression map equipped with interactive code snippets, automated verification test runners, and achievement badges.
+  - **10-Question Knowledge Pool:** Covers `git pull --rebase`, `checkout -b`, `git stash`, annotated release tagging (`git tag -a`), `commit --amend`, merge vs. rebase graph topology, `git restore`, `log --graph`, `cherry-pick`, and un-staging sensitive `.env` files (`restore --staged`).
+  - **5 Randomized Questions Per Round:** Each attempt selects 5 scenarios randomly.
+  - **Top-Right Reset Button:** Allows users to re-roll and practice a fresh set of questions at any time.
+  - **Deep Feedback Engine:** Explains not only why the correct option succeeds, but specifically why each wrong option fails or causes repository disasters.
 
-#### Prototype 4: "Pair-Programming Code Sandbox with AI Mentor" (Live Online Coding)
-- **Format:** In-browser IDE with Live AI Observer.
-- **Core Focus:** *Description* and *Diligence*.
+#### Prototype 3: "PR Code Review & Approval Gate (Kanban Integrated)" (Role: Senior Engineer / Tech Lead)
+- **Format:** Interactive Code Diff Review & Dynamic Sprint Kanban Simulation.
+- **Core Focus:** *Discernment* and *Delegation* (evaluating code safety, API hygiene, and AI hallucinations).
 - **User Experience:**
-  - The learner enters an interactive online coding environment.
-  - Instead of generating the full code, an AI Mentor monitors the user's keystrokes in real time.
-  - If the learner gets stuck or writes an anti-pattern (e.g., hardcoding secrets, creating infinite loops), the AI provides non-intrusive contextual hints.
-  - Focuses on "teaching to fish" by explaining logic flaws without handing over the final solution, mimicking a senior developer pairing session.
-
-#### Prototype 5: "AI-Driven Prompt Engineering Puzzle Rooms" (Gamified Mini-games)
-- **Format:** Escape-Room Style Prompt Challenges.
-- **Core Focus:** *Description* and *Discernment*.
-- **User Experience:**
-  - Learners are given a malfunctioning AI-generated component (e.g., a regex that matches too much, or a React component with a re-render loop).
-  - They have a limited "prompt token budget" to instruct the AI to fix the code.
-  - The challenge is to craft the most precise, constrained, and explicit prompt possible.
-  - Evaluates the learner's ability to specify constraints rather than writing syntax directly.
-
-#### Prototype 6 (Featured): "AI Test Automation & TDD Arena" (Testing Prototype)
-- **Format:** Interactive Test-Driven Development (TDD) Runner & AI Mutation Sandbox.
-- **Core Focus:** *Diligence* and *Discernment* (directly answers the rubric question: *"How are you using Coding agents and AI to support software testing?"*).
-- **User Experience:**
-  - **In-Browser Test Execution:** Learners run automated test assertions in real time against a live calculation engine.
-  - **AI Agent Test Generator:** Generates edge cases, floating-point vulnerabilities, and security guards with a single click.
-  - **Chaos Mutation Injector:** Simulates AI hallucination bugs (e.g. omitting discount caps) to test whether learner test suites can detect subtle regressions.
-  - **Diligence Verification Score:** Quantifies test coverage, mutation survival rate, and 4D Fluency metrics.
+  - **10-Scenario Code Diff Bank:** Features real production code snippets including hardcoded API secret leaks, SQL injection, async `Promise.allSettled` batching, infinite `useEffect` loops, silent error swallowing, Zod schema validation, student PII leaks, Redis TTL cache-aside, disabled TypeScript/ESLint checks, and DB connection leaks.
+  - **4 Randomized PRs Per Round:** Each round tests 4 real-world Pull Requests.
+  - **Multiple-Choice Architectural Verdicts:** Users select Yes/No decisions with technical reasoning (e.g., *"NO: Reject PR because the secret API token is hardcoded in source code"*).
+  - **Exhaustive Rationale:** Explains the underlying architectural rule and why alternative choices are flawed.
+  - **Dynamic Sprint Kanban Board:** Reviewing PRs directly updates the Sprint Kanban board (`UNDER PR REVIEW` -> `CHANGES REQUESTED` / `APPROVED & MERGED`), providing complete role-play immersion.
+  - **Top-Right Reset Button:** Re-rolls 4 new PRs and resets review state.
 
 ---
 

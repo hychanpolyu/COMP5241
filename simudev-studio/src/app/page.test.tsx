@@ -7,22 +7,28 @@ describe('Home Page', () => {
   it('renders the header and main headings', () => {
     render(<Home />);
     expect(screen.getByText('SimuDev Studio')).toBeDefined();
-    expect(screen.getByText('Interactive Prototype Lab')).toBeDefined();
-    expect(screen.getByText('6 Interactive Modules')).toBeDefined();
+    expect(screen.getByText('Role-Playing Prototype Suite')).toBeDefined();
+    expect(screen.getByText('3 Interactive Experiences')).toBeDefined();
   });
 
-  it('renders the featured testing prototype', () => {
+  it('renders Prototype 1 (Function Design BA/SA)', () => {
     render(<Home />);
-    expect(screen.getByText('AI Test Automation & TDD Arena')).toBeDefined();
-    expect(screen.getByText('Launch Testing Arena ⚡')).toBeDefined();
+    expect(screen.getByText('Functional Design & Requirement Scope Filter')).toBeDefined();
+    expect(screen.getByText('Role: Business Analyst / System Analyst')).toBeDefined();
+    expect(screen.getByText(/Launch BA\/SA Challenge/)).toBeDefined();
   });
 
-  it('lists all core and testing prototypes', () => {
+  it('renders Prototype 2 (Git Mastery Developer)', () => {
     render(<Home />);
-    expect(screen.getByText('Simulated Agile Sprint & Multi-Agent PR Review')).toBeDefined();
-    expect(screen.getByText('Interactive System Architecture & Incident War Room')).toBeDefined();
-    expect(screen.getByText('CodeVenture: Universal Gamified Micro-Quest Generator')).toBeDefined();
-    expect(screen.getByText('Pair-Programming Sandbox with AI Mentor')).toBeDefined();
-    expect(screen.getByText('AI-Driven Prompt Engineering Puzzle Rooms')).toBeDefined();
+    expect(screen.getByText('Git Mastery & Workflow Competency Simulator')).toBeDefined();
+    expect(screen.getByText('Role: Software Developer')).toBeDefined();
+    expect(screen.getByText(/Launch Developer Simulator/)).toBeDefined();
+  });
+
+  it('renders Prototype 3 (PR Review Tech Lead)', () => {
+    render(<Home />);
+    expect(screen.getByText('PR Code Review & Approval Gate (Kanban Integrated)')).toBeDefined();
+    expect(screen.getByText('Role: Senior Engineer / Tech Lead')).toBeDefined();
+    expect(screen.getByText(/Launch Tech Lead Gate/)).toBeDefined();
   });
 });

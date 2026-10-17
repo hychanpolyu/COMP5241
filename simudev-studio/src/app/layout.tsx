@@ -3,8 +3,8 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SimuDev Studio | AI-Empowered Software Engineering Platform",
-  description: "Virtual Agile Software House, System Architecture Sandbox & AI Testing Arena for COMP5241",
+  title: "SimuDev Studio | AI-Empowered Role-Playing SE Simulator",
+  description: "Virtual Agile Software House & Role-Playing SE Lab for Business Analysts, Developers, and Tech Leads (COMP5241)",
 };
 
 export default function RootLayout({
@@ -73,14 +73,14 @@ export default function RootLayout({
               <Link href="/" style={{ color: "var(--text-secondary)" }}>
                 Home
               </Link>
-              <Link href="/prototypes/testing-lab" style={{ color: "var(--accent-primary)", fontWeight: 600 }}>
-                Testing Arena
+              <Link href="/prototypes/function-design" style={{ color: "var(--text-secondary)" }}>
+                P1: Function Design (BA/SA)
               </Link>
-              <Link href="/prototypes/agile-sprint" style={{ color: "var(--text-secondary)" }}>
-                Agile Sprint
+              <Link href="/prototypes/git-knowledge" style={{ color: "var(--text-secondary)" }}>
+                P2: Git Mastery (Dev)
               </Link>
-              <Link href="/prototypes/war-room" style={{ color: "var(--text-secondary)" }}>
-                War Room
+              <Link href="/prototypes/pr-review" style={{ color: "var(--text-secondary)" }}>
+                P3: PR Review (Tech Lead)
               </Link>
             </div>
           </div>
@@ -97,7 +97,7 @@ export default function RootLayout({
             color: "var(--text-muted)",
           }}
         >
-          <p>COMP5241 Software Engineering Group Project &bull; SimuDev Studio Prototype Suite</p>
+          <p>COMP5241 Software Engineering Group Project &bull; SimuDev Studio Role-Playing Suite</p>
         </footer>
       </body>
     </html>
